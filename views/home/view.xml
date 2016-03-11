@@ -1,0 +1,17 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
+    <ListView items="{{ items }}" itemTap="itemTap">
+        <ListView.itemTemplate>
+            <GridLayout columns="80,*" marginBottom="10">
+                <Image src="{{ image }}" height="80" width="80"/>
+                <StackLayout col="1" cssClass="mspInfos">
+                    <StackLayout orientation="horizontal">
+                        <Label text="{{ firstName }}" marginRight="20" cssClass="nameTitle"/>
+                        <Label text="{{ lastName }}" cssClass="nameTitle"/>
+                    </StackLayout>
+                    <Label text="{{ email }}"/>        
+                </StackLayout>
+            </GridLayout>
+            
+        </ListView.itemTemplate>
+    </ListView>
+</Page>
